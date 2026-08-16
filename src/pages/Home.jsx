@@ -2,7 +2,7 @@ function Home() {
   return (
     <div>
       <h1>Welcome to Shopora</h1>
-      <p>Your online shopping destination.</p>
+      <p>Enjoy Your Shopping.</p>
     </div>
   );
 }
