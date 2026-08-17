@@ -1,4 +1,8 @@
+import { useCart } from "../context/CartContext";
+
 function ProductCard({ product }) {
+  const { addToCart } = useCart();
+
   return (
     <div>
       <img
@@ -11,7 +15,9 @@ function ProductCard({ product }) {
 
       <p>${product.price}</p>
 
-      <button>View Product</button>
+      <button onClick={() => addToCart(product)}>
+        Add to Cart
+      </button>
     </div>
   );
 }
