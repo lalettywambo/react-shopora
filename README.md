@@ -1,16 +1,59 @@
-# React + Vite
+# Shopora
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Shopora is a React storefront built with Vite and Tailwind CSS. It fetches product data from the [Fake Store API](https://fakestoreapi.com) and includes a shopping cart and checkout flow.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Browse products fetched from a live API
+- Product cards with add-to-cart action
+- Cart page with item removal and running total
+- Checkout form for order details
+- Responsive navbar with a nude and pink pastel theme
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- React Router
+- Tailwind CSS 4
+- Axios
+- Vite
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+## Project Structure
+
+```
+src/
+  components/   Reusable UI components (Navbar, ProductCard)
+  context/      React context providers (CartContext)
+  pages/        Route-level pages (Home, Products, Cart, Checkout, Login, ProductDetails)
+  services/     API client setup
+```
+
+## Design
+
+The UI uses a nude and blush pink pastel color palette defined as Tailwind theme tokens in [src/index.css](src/index.css).

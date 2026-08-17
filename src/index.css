@@ -1,1 +1,31 @@
 @import "tailwindcss";
+
+@theme {
+  /* Nude / blush palette */
+  --color-nude-50: #fdfaf7;
+  --color-nude-100: #f8f0ea;
+  --color-nude-200: #f0e2d6;
+  --color-nude-300: #e4cdb8;
+
+  --color-blush-50: #fdf5f6;
+  --color-blush-100: #fbe8ec;
+  --color-blush-200: #f6d3db;
+  --color-blush-300: #edb3c1;
+  --color-blush-400: #e191a5;
+  --color-blush-500: #d1728b;
+  --color-blush-600: #b85975;
+  --color-blush-700: #94445e;
+
+  --color-taupe-500: #8a746c;
+  --color-taupe-600: #6b5750;
+  --color-taupe-700: #4a3b36;
+  --color-taupe-800: #372a26;
+
+  --font-sans: "Poppins", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-nude-50);
+  font-family: var(--font-sans);
+  color: var(--color-taupe-700);
+}
